@@ -27,6 +27,7 @@ const leftBarAnim = useSpring({
         <h1> Hello World</h1>
       </animated.div>
         <Leftbar  setShowactive={setShowactive} />
+        "this is just a trail"
         <Rightbar />
       </div>
     </div>
