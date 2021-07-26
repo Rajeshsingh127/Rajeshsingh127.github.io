@@ -8,7 +8,9 @@ const [active, setActive] = useState(false);
 
   return(
       <Container fluid className="d-flex justify-content-between headerset ">
-      <span className={` Navbar ${active ? "bord": ""} `} onClick={(props) => {setActive(!active)}}>
+      <span className={` Navbar ${active ? "bord": ""} `}
+      onClick={() => {setActive(!active);
+                           props.setshowActive(!active) }}>
           Activites
       </span>
       <span className="Navbar">
