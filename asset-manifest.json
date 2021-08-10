@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.d84f38d0.chunk.css",
-    "main.js": "/static/js/main.48c01f0a.chunk.js",
-    "main.js.map": "/static/js/main.48c01f0a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d9dcd5a8.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d9dcd5a8.js.map",
-    "static/css/2.818011ed.chunk.css": "/static/css/2.818011ed.chunk.css",
-    "static/js/2.ea314eae.chunk.js": "/static/js/2.ea314eae.chunk.js",
-    "static/js/2.ea314eae.chunk.js.map": "/static/js/2.ea314eae.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.818011ed.chunk.css.map": "/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.d84f38d0.chunk.css.map": "/static/css/main.d84f38d0.chunk.css.map",
-    "static/js/2.ea314eae.chunk.js.LICENSE.txt": "/static/js/2.ea314eae.chunk.js.LICENSE.txt",
-    "static/media/chrome.07dd4965.png": "/static/media/chrome.07dd4965.png",
-    "static/media/fedora.a54317e3.jpg": "/static/media/fedora.a54317e3.jpg",
-    "static/media/file.bc5a0ada.png": "/static/media/file.bc5a0ada.png"
+    "main.css": "/Portfolio/static/css/main.4c913743.chunk.css",
+    "main.js": "/Portfolio/static/js/main.48c01f0a.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.48c01f0a.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.bdfa914d.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.bdfa914d.js.map",
+    "static/css/2.818011ed.chunk.css": "/Portfolio/static/css/2.818011ed.chunk.css",
+    "static/js/2.ea314eae.chunk.js": "/Portfolio/static/js/2.ea314eae.chunk.js",
+    "static/js/2.ea314eae.chunk.js.map": "/Portfolio/static/js/2.ea314eae.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/Portfolio/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.4c913743.chunk.css.map": "/Portfolio/static/css/main.4c913743.chunk.css.map",
+    "static/js/2.ea314eae.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.ea314eae.chunk.js.LICENSE.txt",
+    "static/media/chrome.07dd4965.png": "/Portfolio/static/media/chrome.07dd4965.png",
+    "static/media/fedora.a54317e3.jpg": "/Portfolio/static/media/fedora.a54317e3.jpg",
+    "static/media/file.bc5a0ada.png": "/Portfolio/static/media/file.bc5a0ada.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d9dcd5a8.js",
+    "static/js/runtime-main.bdfa914d.js",
     "static/css/2.818011ed.chunk.css",
     "static/js/2.ea314eae.chunk.js",
-    "static/css/main.d84f38d0.chunk.css",
+    "static/css/main.4c913743.chunk.css",
     "static/js/main.48c01f0a.chunk.js"
   ]
 }
