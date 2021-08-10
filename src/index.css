@@ -50,5 +50,16 @@ width: 100px;
 
 }
 
+.searchbox{
+  z-index: 1;
+  position:absolute;
+  top: 65px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 7px;
+  border: 1px solid rgba(255,255,255,0.7);
+}
+
 .mainpage{
 }
