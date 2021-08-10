@@ -13,7 +13,7 @@ const Home = (props) => {
 const {Activities} = props;
 
   return(
-    <div style={{backgroundImage: `url(${fedora})`, height: "100vh",
+    <div style={{backgroundImage: !Activities ? (`url(${fedora})`):(`linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${fedora})`), height: "100vh",
      backgroundRepeat: "repeat", width: "100vw",backgroundPosition: "center", backgroundSize: "cover"}}>
 
       <Navbar />
@@ -21,7 +21,7 @@ const {Activities} = props;
 
           <Leftbar />
           <Rightbar />
-        
+
       </div>
     </div>
   );

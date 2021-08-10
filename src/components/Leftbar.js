@@ -21,7 +21,7 @@ const leftAnim = useSpring({
 opacity: Activities ? 1 : 0,
 marginLeft: Activities ? 0 : -500,
 config: {
-    duration: 270,
+    duration: 200,
 }
 });
   console.log("Activites in leftbar", Activities);
