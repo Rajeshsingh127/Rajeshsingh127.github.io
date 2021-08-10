@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 code {
@@ -36,7 +37,16 @@ color: rgba(255,255,255,1);
 }
 
 .leftBar{
-  background: #ffffff;
+  background: #2a3133;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 7px;
+}
+
+.leftBar > img {
+  padding: 15px;
+height : 15vh;
+width: 7vw;
+
 
 }
 

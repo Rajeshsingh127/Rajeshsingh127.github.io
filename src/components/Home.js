@@ -5,26 +5,31 @@ import Navbar from "./Navbar";
 import Leftbar from "./Leftbar";
 import React,{useState, useEffect} from "react";
 import Rightbar from"./Rightbar";
-import {Row,Col } from "react-bootstrap";
+import {Row,Col,Modal } from "react-bootstrap";
+import {connect} from "react-redux";
 
 const Home = (props) => {
 
-
-const [showActive,setshowActive] = useState(false);
-
- // useEffect(() => {
- //   console.log("homecomponent: " + showLeft);
- // });
+const {Activities} = props;
 
   return(
-    <div style={{backgroundImage: `url(${fedora})`, height: "100vh"}}>
-      <Navbar setshowActive={setshowActive} />
+    <div style={{backgroundImage: `url(${fedora})`, height: "100vh",
+     backgroundRepeat: "repeat", width: "100vw",backgroundPosition: "center", backgroundSize: "cover"}}>
+
+      <Navbar />
       <div className="d-flex justify-content-between mainpage align-items-center" style={{height:"calc(100vh - 28px)"}}>
-        <Leftbar  dispLeft={showActive} />
-        <Rightbar dispRight={showActive} />
+
+          <Leftbar />
+          <Rightbar />
+        
       </div>
     </div>
   );
 }
 
-export default Home;
+export default connect(
+  (state) => ({
+      Activities: state.Activities
+
+  }))
+ (Home);

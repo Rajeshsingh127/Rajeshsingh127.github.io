@@ -7,26 +7,21 @@ import {BsFillInboxesFill} from "react-icons/bs";
 import {IoMdMailOpen} from "react-icons/io";
 import {Row } from "react-bootstrap";
 import { useSpring, animated } from "react-spring";
+import {connect} from "react-redux";
 
 const Rightbar = (props) => {
-const  [viewRight, setviewRight] = useState(false);
+const {Activities} = props;
 
-const RightAnim = useSpring({
-opacity: viewRight ? 1 : 0,
-marginLeft: viewRight ?  0: +200,
+const rightAnim = useSpring({
+opacity: Activities ? 1 : 0,
+marginRight: Activities ? -30 : -100,
 config: {
     duration: 270,
 }
 });
 
-useEffect(() => {
-    setviewRight(props.dispRight);
-},[props]);
-
-
-
   return(
-      <animated.div className="d-flex flex-column leftBar"  style={RightAnim}>
+      <animated.div className="d-flex flex-column leftBar" style={rightAnim}>
           <BsTerminalFill  size={55}  className="my-2"/>
           <ImChrome size={55} className="my-2"/>
           <AiFillFilePdf size={55} className="my-2"/>
@@ -36,4 +31,8 @@ useEffect(() => {
   );
 }
 
-export default Rightbar;
+export default connect(
+  (state) => ({
+    Activities: state.Activities,
+}))
+(Rightbar);

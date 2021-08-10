@@ -3,37 +3,42 @@ import React,{useState, useEffect} from "react";
 import {BsTerminalFill} from "react-icons/bs";
 import {ImChrome} from "react-icons/im";
 import {AiFillFilePdf} from "react-icons/ai";
-import {BsFillInboxesFill} from "react-icons/bs";
+import {BsFillInboxesFill,BsGrid3X3Gap} from "react-icons/bs";
 import {IoMdMailOpen} from "react-icons/io";
 import {Row } from "react-bootstrap";
 import { useSpring, animated } from "react-spring";
+import {connect } from "react-redux";
+import Chrome from "../resources/icons/chrome.png";
+import Contact from "../resources/icons/contact.png";
+import File from "../resources/icons/file.png";
+import Terminal from "../resources/icons/terminal.png";
 
 const Leftbar = (props) => {
-const  [viewLeft, setviewLeft] = useState(false);
+
+const {Activities} = props;
 
 const leftAnim = useSpring({
-opacity: viewLeft ? 1 : 0,
-marginLeft: viewLeft ? 0 : -500,
+opacity: Activities ? 1 : 0,
+marginLeft: Activities ? 0 : -500,
 config: {
     duration: 270,
 }
 });
-
-useEffect(() => {
-    setviewLeft(props.dispLeft);
-},[props]);
-
-
-
+  console.log("Activites in leftbar", Activities);
   return(
-      <animated.div className="d-flex flex-column leftBar"  style={leftAnim}>
-          <BsTerminalFill  size={55}  className="my-2"/>
-          <ImChrome size={55} className="my-2"/>
-          <AiFillFilePdf size={55} className="my-2"/>
-          <BsFillInboxesFill size={55} className="my-2"/>
-          <IoMdMailOpen size={55} className="my-2"/>
+      <animated.div className="d-flex flex-column leftBar" style ={leftAnim}>
+          <img src = {Chrome} className=" leftbaricon" />
+          <img src = {Contact} className=" leftbaricon" />
+          <img src = {File} className=" leftbaricon" />
+          <img src = {Terminal} className=" leftbaricon" />
+          <BsGrid3X3Gap  size={70} className=" leftbaricon mx-auto mb-1 text-white" />
         </animated.div>
   );
 }
 
-export default Leftbar;
+export default connect(
+  (state) => ({
+  Activities: state.Activities,
+
+}))
+(Leftbar);
