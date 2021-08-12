@@ -19,7 +19,7 @@ code {
   padding-top: 2px;
   padding-bottom: 0px;
   text-align: center;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.9);
 }
 
 .Navbar{
@@ -62,4 +62,21 @@ width: 100px;
 }
 
 .mainpage{
+}
+
+.rightBar{
+  background: #2a3133;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 7px;
+  height: 90%;
+}
+
+.iconsleft{
+  width: 150px;
+  margin-right: -35px;
+}
+
+.iconsEach{
+  margin-right: 5px;
+
 }

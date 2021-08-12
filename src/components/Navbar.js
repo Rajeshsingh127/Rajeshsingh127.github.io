@@ -4,22 +4,34 @@ import React,{useState} from "react";
 import {connect } from "react-redux";
 import {setActivities} from "../store/actions/actions";
 import moment from "moment";
+import {FaWifi} from "react-icons/fa";
+import {GiBatteryPackAlt,GiSpeaker} from "react-icons/gi";
+import {AiFillSound} from "react-icons/ai";
+import {RiArrowDropDownFill} from "react-icons/ri";
+import {Modal} from "react-bootstrap";
+
 const Navbar = (props) => {
 const {Activities,setActivities} = props;
 
   return(
       <Container fluid className="d-flex justify-content-between headerset ">
       <span className={` Navbar ${Activities ? "bord": ""} `}
-      onClick= {() => {setActivities(!Activities)}} >
+      onClick= {() => {setActivities(!Activities)}}  style={{marginLeft: "-1%"}}>
           Activites
       </span>
-      {console.log("redux value changing", Activities)}
-      <span className="Navbar">
-          {moment().format('ddd  H:m')}
+      <span className="Navbar " style={{width: "auto"}}>
+          {moment().format('ddd  H:mm')}
       </span>
-      <span className="Navbar">
-          icons
-      </span>
+
+      <div className="Navbar iconsleft">
+          <FaWifi size = {18}  className="iconsEach" />
+          <GiSpeaker size = {23} className="iconsEach"/>
+          <GiBatteryPackAlt size = {18} className="iconsEach" />
+          <RiArrowDropDownFill size = {28} className="iconsEach" />
+      </div>
+      <Modal>
+      bruh
+      </Modal>
 
       </Container>
   );

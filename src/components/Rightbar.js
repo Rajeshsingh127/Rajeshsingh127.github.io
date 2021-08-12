@@ -21,7 +21,7 @@ config: {
 });
 
   return(
-      <animated.div className="d-flex flex-column leftBar" style={rightAnim}>
+      <animated.div className="d-flex flex-column rightBar" style={rightAnim}>
           <BsTerminalFill  size={55}  className="my-2"/>
           <ImChrome size={55} className="my-2"/>
           <AiFillFilePdf size={55} className="my-2"/>
