@@ -29,10 +29,12 @@ const {Activities,setActivities} = props;
           <GiBatteryPackAlt size = {18} className="iconsEach" />
           <RiArrowDropDownFill size = {28} className="iconsEach" />
       </div>
-      <Modal>
-      bruh
-      </Modal>
+      {/*<Modal show={true}>
+      <Modal.Body  className="rightmini">
 
+      </Modal.Body>
+      </Modal>
+*/}
       </Container>
   );
 }
