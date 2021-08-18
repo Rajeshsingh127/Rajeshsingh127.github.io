@@ -1,8 +1,9 @@
 import * as actionTypes from "../actions/actionTypes";
 
+
 const initState = {
   Activities: false,
-
+  Iconbar: false,
 };
 
 
@@ -13,6 +14,12 @@ const reducer = (state = initState,action) => {
           ...state,
           Activities: action.payload.Activities
         }
+
+    case actionTypes.SET_ICONBAR:
+    return{
+      ...state,
+      Iconbar: action.payload.Iconbar
+    }
   }
   return state
 }

@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import Leftbar from "./Leftbar";
 import React,{useState, useEffect} from "react";
 import Rightbar from"./Rightbar";
+import Iconbar from "./Iconbar";
 import {Row,Col,Modal,Form, InputGroup, FormControl,
 FormGroup,
  } from "react-bootstrap";
@@ -20,6 +21,7 @@ const {Activities} = props;
      backgroundRepeat: "repeat", width: "100vw",backgroundPosition: "center", backgroundSize: "cover"}}>
 
       <Navbar />
+      <Iconbar />
       <div className="d-flex justify-content-between mainpage align-items-center" style={{height:"calc(100vh - 28px)"}}>
 
           <Leftbar />

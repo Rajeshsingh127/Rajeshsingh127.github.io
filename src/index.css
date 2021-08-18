@@ -87,3 +87,44 @@ width: 100px;
   margin-right: 5px;
 
 }
+
+.mainsidebar{
+  background: #2a3133;
+  height: 340px;
+  width: 280px;
+  z-index: 1;
+  position: absolute;
+  top: 45px;
+  right: 15px;
+}
+
+
+.topsidebar{
+  padding-right: 20px;
+
+}
+
+.midsidebar td{
+  height: 35px;
+
+}
+
+.endsidebar{
+  padding-left: 5px;
+  padding-right: 30px;
+  margin-top: 30px;
+}
+
+.midicons{
+  padding-bottom: 10px;
+
+}
+.endicons{
+    border-radius: 100%;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    border: .6px solid rgba(0,0,0,0.2);
+    text-align: center;
+    padding-top: 6px;
+}

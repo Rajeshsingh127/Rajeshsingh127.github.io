@@ -1,5 +1,5 @@
 import {SET_ACTIVITIES} from "./actionTypes";
-
+import {SET_ICONBAR} from "./actionTypes";
 
 
 export const setActivities = (value) => {
@@ -11,6 +11,15 @@ export const setActivities = (value) => {
     };
 };
 
+
+export const setIconbar = (value) => {
+  return {
+    type: SET_ICONBAR,
+    payload: {
+      Iconbar: value,
+    }
+  };
+};
 
 // export const setDarkTheme = (value) => {
 //   return {
