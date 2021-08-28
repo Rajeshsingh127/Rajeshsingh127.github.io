@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.6de35d1a.chunk.css",
-    "main.js": "/static/js/main.37e1f6fb.chunk.js",
-    "main.js.map": "/static/js/main.37e1f6fb.chunk.js.map",
+    "main.css": "/static/css/main.ec71a5d7.chunk.css",
+    "main.js": "/static/js/main.161fc69e.chunk.js",
+    "main.js.map": "/static/js/main.161fc69e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d9dcd5a8.js",
     "runtime-main.js.map": "/static/js/runtime-main.d9dcd5a8.js.map",
     "static/css/2.4be38407.chunk.css": "/static/css/2.4be38407.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.40631a4f.chunk.js.map": "/static/js/2.40631a4f.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.4be38407.chunk.css.map": "/static/css/2.4be38407.chunk.css.map",
-    "static/css/main.6de35d1a.chunk.css.map": "/static/css/main.6de35d1a.chunk.css.map",
+    "static/css/main.ec71a5d7.chunk.css.map": "/static/css/main.ec71a5d7.chunk.css.map",
     "static/js/2.40631a4f.chunk.js.LICENSE.txt": "/static/js/2.40631a4f.chunk.js.LICENSE.txt",
     "static/media/chrome.07dd4965.png": "/static/media/chrome.07dd4965.png",
     "static/media/fedora.a54317e3.jpg": "/static/media/fedora.a54317e3.jpg",
@@ -20,7 +20,7 @@
     "static/js/runtime-main.d9dcd5a8.js",
     "static/css/2.4be38407.chunk.css",
     "static/js/2.40631a4f.chunk.js",
-    "static/css/main.6de35d1a.chunk.css",
-    "static/js/main.37e1f6fb.chunk.js"
+    "static/css/main.ec71a5d7.chunk.css",
+    "static/js/main.161fc69e.chunk.js"
   ]
 }
