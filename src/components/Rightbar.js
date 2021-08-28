@@ -16,7 +16,7 @@ const rightAnim = useSpring({
 opacity: Activities ? 1 : 0,
 marginRight: Activities ? -30 : -100,
 config: {
-    duration: 200,
+    duration: 300,
 }
 });
 

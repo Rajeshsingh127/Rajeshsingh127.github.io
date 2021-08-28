@@ -92,12 +92,25 @@ width: 100px;
   background: #2a3133;
   height: 340px;
   width: 280px;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   top: 45px;
   right: 15px;
+  animation: downCard 300ms 1;
+  border-radius: 2px;
 }
 
+@keyframes downCard {
+    0%{
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+}
 
 .topsidebar{
   padding-right: 20px;
@@ -121,10 +134,11 @@ width: 100px;
 }
 .endicons{
     border-radius: 100%;
-    font-size: 20px;
+    font-size: 17px;
     height: 50px;
     width: 50px;
     border: .6px solid rgba(0,0,0,0.2);
     text-align: center;
     padding-top: 6px;
+
 }

@@ -16,10 +16,11 @@ const {Iconbar, setIconbar} = props;
 
   return(
       <Container fluid className="d-flex justify-content-between headerset ">
-      <span className={` Navbar ${Activities ? "bord": ""} `}
-      onClick= {() => {setActivities(!Activities)}}  style={{marginLeft: "-1%", cursor: "default"}}>
-          Activites
-      </span>
+        <div className={` Navbar ${Activities ? "bord": ""}`}
+        onClick= {() => {setActivities(!Activities)}} style={{marginLeft: "-25px", cursor: "default",
+      minWidth: "100px"}}>
+              Activites
+        </div>
       <span className="Navbar " style={{width: "auto"}}>
           {moment().format('ddd  H:mm')}
       </span>
