@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./Navbar";
 import Leftbar from "./Leftbar";
-import React,{useState, useEffect} from "react";
+import React,{useState, useEffect, lazy} from "react";
 import Rightbar from"./Rightbar";
 import Iconbar from "./Iconbar";
 import {Row,Col,Modal,Form, InputGroup, FormControl,
@@ -11,6 +11,7 @@ FormGroup,
  } from "react-bootstrap";
  import {AiOutlineSearch} from "react-icons/ai";
 import {connect} from "react-redux";
+import WindowBase from "./base/Window";
 
 const Home = (props) => {
 
@@ -25,7 +26,7 @@ const {Activities} = props;
       <div className="d-flex justify-content-between mainpage align-items-center" style={{height:"calc(100vh - 28px)"}}>
 
           <Leftbar />
-
+          {/*  <WindowBase />*/}
           <Rightbar />
 
           <div className="searchbox">

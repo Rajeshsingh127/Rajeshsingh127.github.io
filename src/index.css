@@ -50,6 +50,21 @@ width: 100px;
 
 }
 
+.leftBar > img:active {
+animation: iconzoom 200ms 1;
+
+}
+
+@keyframes iconzoom {
+      0%{
+          transform: scale(1);
+      }
+
+      100%{
+        transform: scale(3);
+    }
+}
+
 .searchbox{
   z-index: 1;
   position:absolute;
@@ -141,4 +156,7 @@ width: 100px;
     text-align: center;
     padding-top: 6px;
 
+}
+.mainpage{
+  position: relative;
 }
